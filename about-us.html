@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>university website design using HTML and CSS</title>
+    <link rel="stylesheet" href="fullresponsive.css" />
+    <script
+      src="https://kit.fontawesome.com/f4f0709e2e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./assets/logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hidemenu()"></i>
+          <ul>
+            <li><a href="fullresponsive.html">HOME</a></li>
+            <li><a href="about-us.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showmenu()"></i>
+      </nav>
+      <h1>About Us</h1>
+    </section>
+
+    <!--about us content-->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <h1>We are the world's Largest university</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. At libero
+            adipisci saepe officiis inventore deleniti itaque dolorum porro? Sed
+            soluta veniam est ad expedita nemo at, laudantium asperiores? Atque
+            laudantium hic esse ullam accusantium, itaque ipsum maxime rem
+            sapiente minus? Atque pariatur dolores magnam voluptate dicta
+            asperiores nihil quibusdam possimus.
+          </p>
+          <a class="hero-btn red-btn">Explore Now</a>
+        </div>
+        <div class="about-col">
+          <img src="./assets/about.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum deleniti
+        praesentium perferendis aut, eligendi obcaecati esse. <br />Magnam,
+        error Assumenda voluptatum, odio nihil fugit labore iste tempora! Magni
+        ut corporis aperiam.
+      </p>
+      <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+      </div>
+      <p>Made With <i class="fa-regular fa-heart"></i>by amrutha</p>
+    </section>
+
+    <!--javascript for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showmenu() {
+        navLinks.style.right = "0";
+      }
+      function hidemenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
